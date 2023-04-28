@@ -1,0 +1,25 @@
+//* ------------------------------- Google Font ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+//* ------------------------------- Google Font ------------------------------ */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto",sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 77%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
