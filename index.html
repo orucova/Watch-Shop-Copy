@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <title>Document</title>
+    <link rel="favicon" type="image/x-icon" href="./assets/image/favicon.ico" />
+    <title>Watch shop | eCommers</title>
   </head>
   <body>
     <!--?---------------------------- Start Header ----------------------------- -->
@@ -22,11 +23,51 @@
               </li>
               <li class="nav-iteam"><a href="#">Shop</a></li>
               <li class="nav-iteam"><a href="#">About</a></li>
-              <li class="nav-iteam hot"><a href="#">Latest</a>
-            <ul>DropDown</ul>
-        </li>
-              <li class="nav-iteam"><a href="#">Blog</a></li>
-              <li class="nav-iteam"><a href="#">Pages</a></li>
+              <li class="nav-iteam hot">
+                <a href="#">Latest</a>
+                <ul class="dropdown-list">
+                  <i class="fa-solid fa-caret-up"></i>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Product List</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Product Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-iteam">
+                <a href="#">Blog</a>
+                <ul class="dropdown-list">
+                  <i class="fa-solid fa-caret-up"></i>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Blogt</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Blog List</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-iteam">
+                <a href="#">Pages</a>
+                <ul class="dropdown-list">
+                  <i class="fa-solid fa-caret-up"></i>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Login</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Cart</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Element</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Confirmation</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="d-item" href="#">Product Checkout</a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-iteam"><a href="#">Contact</a></li>
             </ul>
           </nav>
@@ -45,9 +86,41 @@
           </div>
         </div>
       </div>
-      
     </header>
     <!--* ----------------------------- End Header ------------------------------ -->
+    <!--? ----------------------------- Start main ------------------------------ -->
+    <main>
+      <!--* ------------------------- Start home section -------------------------- -->
+      <section class="home-section">
+        <div class="container">
+          <div class="row">
+            <div class="main-info">
+              <h1>Select Your New Perfect Style</h1>
+              <p class="home-text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea <br> commodo consequat is aute irure.
+              </p>
+              <div class="home-btn">
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+            <div class="main-photo">
+              <img src="./assets/image/watch.png.webp" alt="watch" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ?-------------------------- End home section --------------------------- -->
+      <!--* ------------------------ Start arrival section ------------------------ -->
+      <section class="arrival-section">
+        <h2>New Arrival</h2>
+        <div class="product-prices">
+          <img src="./assets/image/new_product1.png.webp" alt="product" />
+        </div>
+      </section>
+      <!--? ------------------------- End arrival section ------------------------- -->
+    </main>
+    <!-- *------------------------------ End main ------------------------------- -->
     <!--* ---------------------------- Font Awesome ----------------------------- -->
     <script
       src="https://kit.fontawesome.com/c10ff97e1e.js"

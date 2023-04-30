@@ -20,6 +20,65 @@
   display: flex;
 }
 
+main .home-section {
+  width: 100%;
+  background: #f0f0f2;
+}
+main .home-section .container .row {
+  align-items: center;
+  justify-content: space-between;
+}
+main .home-section .container .row .main-info {
+  width: 70%;
+}
+main .home-section .container .row .main-info h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 26px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #0b1c39;
+}
+main .home-section .container .row .main-info .home-text {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 60px;
+  padding-right: 50px;
+}
+main .home-section .container .home-btn a {
+  background: #4a4a4b;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 30px 28px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+}
+main .home-section .container .home-btn a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff2020;
+  transition: transform 0.5s;
+  transform-origin: left;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+main .home-section .container .home-btn a:hover::before {
+  transform: scaleX(1);
+  z-index: -1;
+}
+
 header {
   padding: 0 10px;
   width: 100%;
@@ -46,6 +105,10 @@ header .header-all .row nav .nav-list .nav-iteam {
 header .header-all .row nav .nav-list .nav-iteam:hover a {
   color: #ff2020;
 }
+header .header-all .row nav .nav-list .nav-iteam:hover .dropdown-list {
+  visibility: visible;
+  opacity: 1;
+}
 header .header-all .row nav .nav-list .nav-iteam a {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
@@ -54,6 +117,43 @@ header .header-all .row nav .nav-list .nav-iteam a {
   padding: 41px 21px;
   cursor: pointer;
   transition: 0.3s ease all;
+}
+header .header-all .row nav .nav-list .nav-iteam .dropdown-list {
+  position: absolute;
+  width: 170px;
+  background: #fff;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  top: 63px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+  padding: 17px 0;
+  border-top: 3px solid #ff2020;
+  border-radius: 7px 7px 3px 3px;
+  transition: 0.3s ease all;
+  z-index: 9999;
+}
+header .header-all .row nav .nav-list .nav-iteam .dropdown-list .dropdown-item {
+  margin-left: 7px;
+}
+header .header-all .row nav .nav-list .nav-iteam .dropdown-list .dropdown-item .d-item {
+  padding: 11px 10px;
+  font-size: 16px;
+  color: #0b1c39;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  display: block;
+  transition: 0.3s ease all;
+}
+header .header-all .row nav .nav-list .nav-iteam .dropdown-list .dropdown-item:hover .d-item {
+  color: #ff003c;
+}
+header .header-all .row nav .nav-list .nav-iteam .dropdown-list .fa-caret-up {
+  position: absolute;
+  top: -12px;
+  left: 23px;
+  color: #ff003c;
+  font-size: 16px;
 }
 header .header-all .row nav .nav-list .hot::before {
   content: "HOT";

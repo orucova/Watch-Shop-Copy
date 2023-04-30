@@ -1,0 +1,35 @@
+main{
+    //* --------------------------- Start home section --------------------------- */
+    .home-section{
+        width: 100%;
+        background: #f0f0f2;
+        .container{
+.row{
+    align-items: center;
+    justify-content: space-between;
+    .main-info{
+        width: 70%;
+        h1{
+            font-size: 96px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 26px;
+    font-family: "Josefin Sans",sans-serif;
+    color: #0b1c39;
+        }
+.home-text{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 60px;
+    padding-right: 50px;
+}
+}
+    }
+    .home-btn{
+        @include btn-all(#4a4a4b,#ff2020);
+    }
+}
+        }
+    }
+    //? ---------------------------- end home section ---------------------------- */
