@@ -241,4 +241,60 @@ main {
     }
   }
   //? ---------------------------- End item section ---------------------------- */
+  //* --------------------------- Start video section -------------------------- */
+  .video-section {
+    width: 100%;
+    height: 700px;
+    background-image: url(../image/sectin_bg1.png.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .video-player {
+      width: 85px;
+      height: 85px;
+      color: #fff;
+      border: #fff solid 1px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.4s ease all;
+      i {
+        font-size: 25px;
+      }
+      &:hover {
+        background-color: #fff;
+        color: #f81f1f;
+      }
+    }
+    .next-video {
+      width: 516px;
+      padding: 60px 80px;
+      background-color: #f81f1f;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      p {
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        color: #ffffff;
+        font-weight: 600;
+      }
+      a {
+        i {
+          font-size: 30px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  //? ---------------------------- End video section --------------------------- */
 }
