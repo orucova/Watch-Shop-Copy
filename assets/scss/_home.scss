@@ -29,6 +29,7 @@ main {
       .home-btn {
         @include btn-all(#4a4a4b, #ff2020);
       }
+
     }
   }
   //? ---------------------------- End home section ---------------------------- */
@@ -237,6 +238,15 @@ main {
             }
           }
         }
+        .item-btn{
+          display: flex;
+          justify-content: center;
+          padding-top: 70px;
+          @include btn-all (#ff2020,#635c5c);
+          a{
+           padding: 30px 28px;
+          }
+        }
       }
     }
   }
@@ -300,29 +310,54 @@ main {
   //* -------------------------- Start choice section -------------------------- */
   .choice-section{
     width: 100%;
+    padding: 200px 0 170px;
     .container{
-      .row{
-        .choice-element{
-          width: 100%;
-          display: flex;
-          .choice-text{
-           
-            h2{
-
-              p{
-
-              }
-            }
-          }
-          .choice-image{
-           
-            img{
-
-            }
-          }
+.row{
+  padding-bottom: 130px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+  .choice-text{
+max-width: 42%;
+flex: 0 0 42%;
+padding: 0 15px;
+text-align: left;
+h2{
+      font-family: "Josefin Sans",sans-serif;
+      color: #000;
+font-size: 56px;
+font-weight: 700;
+line-height: 1;
+margin-bottom: 40px;
+}
+p{
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-size: 17px;
+  font-family: "Roboto",sans-serif;
+color: #777;
+}
+.choice-btn{
+  justify-content: start;
+  @include btn-all(#ff2020,#635c5c);
+  a{
+    padding: 30px 28px;
+  }
+}
+  }
+  .choice-image{
+    max-width: 50%;
+    flex: 0 0 50%;
+   
+    img{
+max-width: 100%;
+    }
+  }
+}
         }
       }
     }
-  }
+  
   //? --------------------------- End choice section --------------------------- */
-}
+

@@ -54,7 +54,7 @@ main .home-section .container .home-btn a {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  padding: 30px 28px;
+  padding: 25px 29px;
   display: inline-block;
   line-height: 0;
   position: relative;
@@ -267,6 +267,46 @@ main .item-section .container .row .item-cards .item-card h3 a {
 main .item-section .container .row .item-cards .item-card:hover .item-image .adding {
   transform: translateY(0);
 }
+main .item-section .container .row .item-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+main .item-section .container .row .item-btn a {
+  background: #ff2020;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 25px 29px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+}
+main .item-section .container .row .item-btn a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #635c5c;
+  transition: transform 0.5s;
+  transform-origin: left;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+main .item-section .container .row .item-btn a:hover::before {
+  transform: scaleX(1);
+  z-index: -1;
+}
+main .item-section .container .row .item-btn a {
+  padding: 30px 28px;
+}
 main .video-section {
   width: 100%;
   height: 700px;
@@ -321,11 +361,82 @@ main .video-section .next-video a i {
 }
 main .choice-section {
   width: 100%;
+  padding: 200px 0 170px;
 }
-main .choice-section .container .row .choice-element {
-  width: 100%;
+main .choice-section .container .row {
+  padding-bottom: 130px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+main .choice-section .container .row .choice-text {
+  max-width: 42%;
+  flex: 0 0 42%;
+  padding: 0 15px;
+  text-align: left;
+}
+main .choice-section .container .row .choice-text h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+main .choice-section .container .row .choice-text p {
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  color: #777;
+}
+main .choice-section .container .row .choice-text .choice-btn {
+  justify-content: start;
+}
+main .choice-section .container .row .choice-text .choice-btn a {
+  background: #ff2020;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 25px 29px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+}
+main .choice-section .container .row .choice-text .choice-btn a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #635c5c;
+  transition: transform 0.5s;
+  transform-origin: left;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+main .choice-section .container .row .choice-text .choice-btn a:hover::before {
+  transform: scaleX(1);
+  z-index: -1;
+}
+main .choice-section .container .row .choice-text .choice-btn a {
+  padding: 30px 28px;
+}
+main .choice-section .container .row .choice-image {
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+main .choice-section .container .row .choice-image img {
+  max-width: 100%;
+}
+
 header {
   padding: 0 10px;
   width: 100%;
