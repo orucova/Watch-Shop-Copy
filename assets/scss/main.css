@@ -319,7 +319,13 @@ main .video-section .next-video a i {
   font-size: 30px;
   color: #ffffff;
 }
-
+main .choice-section {
+  width: 100%;
+}
+main .choice-section .container .row .choice-element {
+  width: 100%;
+  display: flex;
+}
 header {
   padding: 0 10px;
   width: 100%;

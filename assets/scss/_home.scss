@@ -297,4 +297,32 @@ main {
     }
   }
   //? ---------------------------- End video section --------------------------- */
+  //* -------------------------- Start choice section -------------------------- */
+  .choice-section{
+    width: 100%;
+    .container{
+      .row{
+        .choice-element{
+          width: 100%;
+          display: flex;
+          .choice-text{
+           
+            h2{
+
+              p{
+
+              }
+            }
+          }
+          .choice-image{
+           
+            img{
+
+            }
+          }
+        }
+      }
+    }
+  }
+  //? --------------------------- End choice section --------------------------- */
 }
