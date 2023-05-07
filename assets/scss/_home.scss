@@ -357,7 +357,30 @@ max-width: 100%;
 }
         }
       }
+      //? --------------------------- End choice section --------------------------- */
+      //* ---------------------- Start payment system section ---------------------- */
+      .payment-system-section{
+        width: 100%;
+        .container{
+          .system-blocks{
+          width: 100%;
+          border: solid #f81f1f; 
+          background-color: #f81f1f;
+            .row{
+              justify-content: space-between;
+              .block{
+              color: #fff;
+              font-family: "Roboto",sans-serif;
+                i{}
+                h6{}
+                p{}
+              }
+            }
+          }
+        }
+      }
+      //? ----------------------- End payment system section ----------------------- */
     }
   
-  //? --------------------------- End choice section --------------------------- */
+
 

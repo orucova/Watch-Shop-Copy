@@ -436,7 +436,21 @@ main .choice-section .container .row .choice-image {
 main .choice-section .container .row .choice-image img {
   max-width: 100%;
 }
-
+main .payment-system-section {
+  width: 100%;
+}
+main .payment-system-section .container .system-blocks {
+  width: 100%;
+  border: solid #f81f1f;
+  background-color: #f81f1f;
+}
+main .payment-system-section .container .system-blocks .row {
+  justify-content: space-between;
+}
+main .payment-system-section .container .system-blocks .row .block {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
 header {
   padding: 0 10px;
   width: 100%;
