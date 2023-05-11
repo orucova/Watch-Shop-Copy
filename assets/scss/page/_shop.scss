@@ -1,0 +1,25 @@
+main{
+    .home-section{
+        width: 100%;
+        .home-bg{
+            background-image:url(../image/shop-back-img.webp);
+            min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+            h2{
+                font-size: 70px;
+                font-weight: 700;
+                font-family: "Josefin Sans",sans-serif;
+                color: #0b1c39;
+            }
+        }
+    }
+}
+.item-section{
+    padding: 190px 0 130px;
+}
