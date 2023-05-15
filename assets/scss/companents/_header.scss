@@ -138,6 +138,7 @@ header {
 display: flex;
           .header-icon {
             .icon-list {
+              
               .icon-iteam {
                 &:hover {
                   a {
@@ -156,12 +157,46 @@ display: flex;
           }
           .top-nav{
             display: block;
+            .menu{
+              z-index: 9999;
+              li:last-child{
+               display: none;
+            }
           }
         }
       }
     }
   }
 }
+
+@media(max-width:776px){
+  header {
+    .header-all {
+      .row {
+        .nav-and-burger{
+          .header-icon{
+            display: none;
+          }
+          .top-nav{
+            .menu{
+
+              li:last-child{
+              display: block;
+              .header-icon{
+                display: block;
+                .row{
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+
 @media(max-width:480px){
   header {
     .header-all {
@@ -177,4 +212,5 @@ display: flex;
       }
     }
   }
+}
 }

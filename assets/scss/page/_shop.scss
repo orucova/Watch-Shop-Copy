@@ -23,3 +23,38 @@ main{
 .item-section{
     padding: 190px 0 130px;
 }
+@media (max-width: 776px) {
+    .item-section {
+      .container {
+        width: 100%;
+        .row {
+          justify-content: center;
+          align-items: center;
+          .item-title {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 567px) {
+    .item-section {
+      .container {
+        .row {
+          .item-title {
+            width: 75%;
+            h3 {
+              font-size: 37px;
+            }
+          }
+          .item-cards {
+            width: 100%;
+            .item-card {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
