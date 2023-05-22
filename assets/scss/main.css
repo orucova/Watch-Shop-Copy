@@ -810,6 +810,51 @@ main .home-section .home-bg h2 {
     max-width: 100%;
   }
 }
+main .text-section {
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 170px;
+}
+main .text-section .container .row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+main .text-section .container .row .text-item {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0 15px;
+  margin-left: 97px;
+}
+main .text-section .container .row .text-item h4 {
+  position: relative;
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000a2d;
+  display: inline-block;
+  padding-left: 68px;
+}
+main .text-section .container .row .text-item h4 .dash {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 2px;
+  background: #eb566c;
+  top: 0;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .text-section .container .row .text-item p {
+  font-family: "Roboto", sans-serif;
+  color: #464d65;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
 footer {
   width: 100%;
   padding-top: 150px;
